@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="917e5df3-fb79-4217-8909-20f096602a56" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/All.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/All.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Load.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Load.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Photo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Photo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/actionCreatore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/actionCreatore.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/tasks.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/InstaService.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +27,6 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="js.linters.configure.manually.selectedeslint" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -65,6 +55,8 @@
       <workItem from="1614362002782" duration="292000" />
       <workItem from="1614367753075" duration="663000" />
       <workItem from="1614709689351" duration="3500000" />
+      <workItem from="1614714575251" duration="283000" />
+      <workItem from="1614714900945" duration="660000" />
     </task>
     <servers />
   </component>
