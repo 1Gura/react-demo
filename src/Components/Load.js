@@ -1,6 +1,6 @@
 import React from "react";
 
-const Load = (props) => {
+const Load = () => {
   return (
     <div className="container-load">
       <div className="lds-ring">

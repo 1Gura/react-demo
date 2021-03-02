@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import "./style.scss";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import thunk from "redux-thunk";

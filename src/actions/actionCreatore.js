@@ -5,7 +5,7 @@ import {
   GET_POSTS,
   GET_SEARCH_POST,
 } from "../constants";
-import Unsplash, { toJson } from "unsplash-js";
+import { toJson } from "unsplash-js";
 export const postsFetchDataSuccess = (posts) => {
   return {
     type: ADD_POSTS,

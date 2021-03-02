@@ -29,7 +29,6 @@ class All extends Component {
       );
     } catch (e) {
       return <h1>Произошла ошибка...</h1>;
-      console.log("Ошибка:", e);
     }
   }
 }
