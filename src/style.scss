@@ -1,7 +1,6 @@
 //переменные
 $width: 24px;
-$span-width:100%;
-
+$span-width: 100%;
 
 .field {
   input {
@@ -14,8 +13,8 @@ $span-width:100%;
 .nav-menu {
   li {
     svg {
-      width:22px;
-      height:22px;
+      width: 22px;
+      height: 22px;
     }
   }
 
@@ -42,7 +41,8 @@ $span-width:100%;
   display: flex;
   justify-content: left;
   align-items: center;
-  .bar-like {}
+  .bar-like {
+  }
   * {
     cursor: pointer;
   }
@@ -55,8 +55,7 @@ $span-width:100%;
   padding: 20px;
 }
 .post__date {
-
-  color: #8E8E8E;
+  color: #8e8e8e;
 }
 
 .post__container-like {
@@ -64,8 +63,6 @@ $span-width:100%;
   justify-content: space-between;
   align-items: center;
   width: fit-content;
-
-
 
   svg {
     min-width: $width;
@@ -83,12 +80,12 @@ $span-width:100%;
   position: absolute;
   left: 87%;
   border: none;
-  top:15%;
+  top: 15%;
   cursor: pointer;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   outline: none;
 
-  *{
+  * {
     width: 20px;
     height: 20px;
   }

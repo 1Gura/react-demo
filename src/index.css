@@ -2,11 +2,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 
 .container {
@@ -18,14 +18,14 @@ header {
   top: 0;
   height: 50px;
   width: 100%;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
   position: fixed !important;
 }
 
 footer {
   height: 90px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
 }
 
@@ -88,7 +88,7 @@ footer {
 
 .left {
   max-width: 850px;
-  padding:30px;
+  padding: 30px;
 }
 
 @media (max-width: 735px) {
@@ -113,12 +113,11 @@ footer {
   }
 }
 
-
 .post {
   margin-bottom: 70px;
   width: 650px;
   min-height: 560px;
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -128,13 +127,13 @@ footer {
   margin: 12px 12px;
 }
 
-.post-photo{
+.post-photo {
   width: 100%;
   object-fit: cover;
-  overflow:hidden
+  overflow: hidden;
 }
 
-.post-photo img{
+.post-photo img {
   width: 100%;
   height: 100%;
 }
@@ -156,7 +155,6 @@ footer {
   align-items: center;
   text-decoration: none;
   color: #000;
-  
 }
 
 .user img {
@@ -198,7 +196,7 @@ footer {
   padding: 20px;
   width: 265px;
   min-height: 260px;
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -217,7 +215,7 @@ footer {
 }
 
 .palette img {
-  width: calc(100%/3 - 60px);
+  width: calc(100% / 3 - 60px);
   margin: 10px;
   height: 300px;
   object-fit: cover;
@@ -231,10 +229,10 @@ footer {
 .photo {
   width: 100%;
   padding: 30px;
-  height:fit-content;
+  height: fit-content;
   display: flex;
   border-radius: 5px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .photo-img {
@@ -245,7 +243,7 @@ footer {
   width: 100%;
 }
 
-.photo-img img{
+.photo-img img {
   max-height: 47vw;
   border-radius: 5px;
   object-fit: contain;
@@ -262,7 +260,7 @@ footer {
 }
 
 .active {
-  fill: #D33993;
+  fill: #d33993;
 }
 
 /*footer*/
@@ -272,13 +270,12 @@ li {
 
 a {
   text-decoration: none;
-
 }
 
 .footer {
   width: 100%;
-  background-color: #FAFAFA;
-  color: #8E8E8E;
+  background-color: #fafafa;
+  color: #8e8e8e;
   height: fit-content;
   padding: 30px;
   position: absolute;
@@ -290,11 +287,11 @@ a {
   top: 100%;
 }
 
-.footer__nav-menu ul *{
+.footer__nav-menu ul * {
   padding: 5px;
 }
 .footer a {
-  color: #8E8E8E;
+  color: #8e8e8e;
 }
 
 .footer__list {
@@ -328,7 +325,6 @@ a {
   width: 360px;
   height: 360px;
   padding: 10px;
-
 }
 
 .photo-preview {
@@ -341,7 +337,6 @@ a {
 .field {
   position: relative;
 }
-
 
 /*Стили для лоадера*/
 .container-load {
@@ -356,7 +351,6 @@ a {
   position: relative;
   width: 164px;
   height: 164px;
-
 }
 .lds-ring div {
   box-sizing: border-box;
@@ -386,5 +380,3 @@ a {
     transform: rotate(360deg);
   }
 }
-
-
