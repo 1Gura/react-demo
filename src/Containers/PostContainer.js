@@ -20,7 +20,9 @@ import Load from "../Components/Load";
 const unsplash = new Unsplash({
   accessKey: "AjdqGNN2J3YljxoQKuDTucL8mCkxqv-hLhRMpMO3PSg",
   secret: "XhyISIZuair3TxDrjB8WBGaVf6uLgpkgxaDCuf39rZc",
-  callbackUrl: "http://localhost:3000/",
+  // callbackUrl: "http://localhost:3000/",
+
+  callbackUrl: "https://sugarboy228.github.io/react-demo/",
 });
 const authenticationUrl = unsplash.auth.getAuthenticationUrl([
   "public",
