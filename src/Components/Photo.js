@@ -1,19 +1,6 @@
 import React from "react";
-import Posts from "./Posts";
-import Users from "./Users";
-import { Link } from "react-router-dom";
 import User from "./User";
 import All from "./All";
-import { connect } from "react-redux";
-import mapDispatchToProps from "react-redux/lib/connect/mapDispatchToProps";
-import mapStateToProps from "react-redux/lib/connect/mapStateToProps";
-import {
-  clickLike,
-  getPost,
-  getUnsplashBody,
-  newPostsSearch,
-  postsFetchData,
-} from "../actions/actionCreatore";
 
 const Photo = (props) => {
   try {
