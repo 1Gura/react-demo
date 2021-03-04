@@ -106,7 +106,6 @@ class PostContainer extends Component {
   };
 
   flagChange = () => {
-    const str = window.location.pathname;
     if (window.location.pathname.includes("all")) {
       this.setState({
         inputFlag: true,

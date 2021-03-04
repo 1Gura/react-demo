@@ -15,18 +15,15 @@ const Photo = (props) => {
       }
     };
 
-    const goBack = () => {
-      window.history.back();
-    };
     const { photos, photoId, clickLikePost, photosSearch } = props;
     let photo = null;
-    photos.map((item) => {
+    photos.forEach((item) => {
       if (item.id === photoId) {
         photo = item;
       }
     });
     if (photo === null) {
-      photosSearch.map((item) => {
+      photosSearch.forEach((item) => {
         if (item.id === photoId) {
           photo = item;
         }
