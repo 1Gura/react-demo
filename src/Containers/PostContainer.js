@@ -165,15 +165,34 @@ class PostContainer extends Component {
                     newSearchPostFunc={this.newPostsSearchContainer}
                   />
                 );
+              } else if (id === "react-demo") {
+                return (
+                  <Feed
+                    user={this.state.userProfile}
+                    posts={posts}
+                    clickLikePost={this.like}
+                    newPosts={this.newPosts}
+                  />
+                );
+              } else if (id.length > 0) {
+                return (
+                  <Photo
+                    photosSearch={searchPosts}
+                    clickLikePost={this.like}
+                    photos={posts}
+                    photoId={id}
+                  />
+                );
+              } else {
+                return (
+                  <Feed
+                    user={this.state.userProfile}
+                    posts={posts}
+                    clickLikePost={this.like}
+                    newPosts={this.newPosts}
+                  />
+                );
               }
-              return (
-                <Photo
-                  photosSearch={searchPosts}
-                  clickLikePost={this.like}
-                  photos={posts}
-                  photoId={id}
-                />
-              );
             }}
           />
           <Footer />
