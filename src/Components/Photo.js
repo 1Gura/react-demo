@@ -1,6 +1,5 @@
 import React from "react";
 import User from "./User";
-import All from "./All";
 
 const Photo = (props) => {
   try {

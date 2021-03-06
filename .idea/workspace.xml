@@ -4,7 +4,7 @@
     <list default="true" id="917e5df3-fb79-4217-8909-20f096602a56" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Photo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Photo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Containers/PostContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Containers/PostContainer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +37,23 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RunManager">
+    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="deploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.deploy" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -55,7 +72,7 @@
       <workItem from="1614709689351" duration="3500000" />
       <workItem from="1614714575251" duration="283000" />
       <workItem from="1614714900945" duration="660000" />
-      <workItem from="1615032749062" duration="2270000" />
+      <workItem from="1615032749062" duration="2468000" />
     </task>
     <servers />
   </component>
