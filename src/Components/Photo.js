@@ -101,7 +101,7 @@ const Photo = (props) => {
       </div>
     );
   } catch (e) {
-    return <All />;
+    console.log(e);
   }
 };
 
