@@ -9,7 +9,7 @@ class Header extends Component {
     return (
       <header>
         <div className="container h-flex">
-          <NavLink to="/" className="logo">
+          <NavLink to="/react-demo/" className="logo">
             <img src={logo} alt="logo"></img>
           </NavLink>
           {flag ? (
@@ -38,7 +38,7 @@ class Header extends Component {
           <nav className="links">
             <ul className="nav-menu">
               <li className="links-item">
-                <NavLink to="/">
+                <NavLink to="/react-demo/">
                   <svg
                     viewBox="0 0 48 48"
                     height="22"
@@ -52,7 +52,7 @@ class Header extends Component {
                 </NavLink>
               </li>
               <li className="links-item">
-                <NavLink to="/all">
+                <NavLink to="/react-demo/all">
                   <svg
                     viewBox="0 0 48 48"
                     height="22"

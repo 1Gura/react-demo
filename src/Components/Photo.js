@@ -100,6 +100,7 @@ const Photo = (props) => {
       </div>
     );
   } catch (e) {
+    return <div className="photo-container"></div>;
   } finally {
   }
 };
