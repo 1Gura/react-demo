@@ -15,16 +15,12 @@ class Feed extends Component {
     }
     return (
       <div className="container feed">
-        {propsItem.length > 0 ? (
-          <Posts
-            postsStore={propsItem}
-            unsplashBody={this.props.unsplashBody}
-            newPosts={this.props.newPosts}
-            clickLikePost={this.props.clickLikePost}
-          />
-        ) : (
-          <Load />
-        )}
+        <Posts
+          postsStore={propsItem}
+          unsplashBody={this.props.unsplashBody}
+          newPosts={this.props.newPosts}
+          clickLikePost={this.props.clickLikePost}
+        />
         <Users postsStore={propsItem} user={this.props.user} />
       </div>
     );

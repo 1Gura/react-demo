@@ -341,11 +341,10 @@ a {
 /*Стили для лоадера*/
 
 .container-load {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-82px, -82px);
 }
 
 .lds-ring {
