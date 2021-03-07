@@ -35,11 +35,7 @@ const Users = (props) => {
       </div>
     );
   } catch (e) {
-    return (
-      <div className="right">
-        <h1>загрузка...</h1>
-      </div>
-    );
+    return <div className="right"></div>;
   }
 };
 

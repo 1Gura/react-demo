@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Posts from "./Posts";
 import Users from "./Users";
+import Load from "./Load";
 
 class Feed extends Component {
   componentDidMount() {}
@@ -14,12 +15,16 @@ class Feed extends Component {
     }
     return (
       <div className="container feed">
-        <Posts
-          postsStore={propsItem}
-          unsplashBody={this.props.unsplashBody}
-          newPosts={this.props.newPosts}
-          clickLikePost={this.props.clickLikePost}
-        />
+        {propsItem.length > 0 ? (
+          <Posts
+            postsStore={propsItem}
+            unsplashBody={this.props.unsplashBody}
+            newPosts={this.props.newPosts}
+            clickLikePost={this.props.clickLikePost}
+          />
+        ) : (
+          <Load />
+        )}
         <Users postsStore={propsItem} user={this.props.user} />
       </div>
     );

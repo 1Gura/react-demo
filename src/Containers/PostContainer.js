@@ -134,18 +134,14 @@ class PostContainer extends Component {
           <Route
             path="/"
             exact
-            render={() =>
-              posts.length === 0 ? (
-                <Load />
-              ) : (
-                <Feed
-                  user={this.state.userProfile}
-                  posts={posts}
-                  clickLikePost={this.like}
-                  newPosts={this.newPosts}
-                />
-              )
-            }
+            render={() => (
+              <Feed
+                user={this.state.userProfile}
+                posts={posts}
+                clickLikePost={this.like}
+                newPosts={this.newPosts}
+              />
+            )}
           />
           <Route
             path="/:id"
@@ -165,17 +161,14 @@ class PostContainer extends Component {
                   />
                 );
               } else if (id === "react-demo") {
-                return () =>
-                  posts.length === 0 ? (
-                    <Load />
-                  ) : (
-                    <Feed
-                      user={this.state.userProfile}
-                      posts={posts}
-                      clickLikePost={this.like}
-                      newPosts={this.newPosts}
-                    />
-                  );
+                return () => (
+                  <Feed
+                    user={this.state.userProfile}
+                    posts={posts}
+                    clickLikePost={this.like}
+                    newPosts={this.newPosts}
+                  />
+                );
               } else if (id.length > 0) {
                 return (
                   <Photo
@@ -186,17 +179,14 @@ class PostContainer extends Component {
                   />
                 );
               } else {
-                return () =>
-                  posts.length === 0 ? (
-                    <Load />
-                  ) : (
-                    <Feed
-                      user={this.state.userProfile}
-                      posts={posts}
-                      clickLikePost={this.like}
-                      newPosts={this.newPosts}
-                    />
-                  );
+                return () => (
+                  <Feed
+                    user={this.state.userProfile}
+                    posts={posts}
+                    clickLikePost={this.like}
+                    newPosts={this.newPosts}
+                  />
+                );
               }
             }}
           />
