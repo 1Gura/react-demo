@@ -6,7 +6,7 @@ import Photo from "../Components/Photo";
 import Footer from "../Components/Footer";
 import { connect } from "react-redux";
 import Unsplash, { toJson } from "unsplash-js";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Redirect } from "react-router-dom";
 
 import {
   clickLike,
@@ -20,8 +20,8 @@ import Load from "../Components/Load";
 const unsplash = new Unsplash({
   accessKey: "AjdqGNN2J3YljxoQKuDTucL8mCkxqv-hLhRMpMO3PSg",
   secret: "XhyISIZuair3TxDrjB8WBGaVf6uLgpkgxaDCuf39rZc",
-  callbackUrl: "http://localhost:3000/",
-  //callbackUrl: "https://sugarboy228.github.io/react-demo/",
+  //callbackUrl: "http://localhost:3000/",
+  callbackUrl: "https://sugarboy228.github.io/react-demo/",
 });
 const authenticationUrl = unsplash.auth.getAuthenticationUrl([
   "public",
@@ -147,7 +147,6 @@ class PostContainer extends Component {
               )
             }
           />
-          {/*<Route path = '/all' exact render={props => <All key = {unsplash.accessKey} newSearchPosts = {searchPosts} newSearchPostFunc = {this.props.newPostsSearch}/>}/>*/}
           <Route
             path="/:id"
             exact
@@ -166,16 +165,7 @@ class PostContainer extends Component {
                   />
                 );
               } else if (id === "react-demo") {
-                return posts.length > 0 ? (
-                  <Feed
-                    user={this.state.userProfile}
-                    posts={posts}
-                    clickLikePost={this.like}
-                    newPosts={this.newPosts}
-                  />
-                ) : (
-                  <Load />
-                );
+                return posts.length > 0 ? <Redirect to="/" /> : <Load />;
               } else if (id.length > 0) {
                 return (
                   <Photo
