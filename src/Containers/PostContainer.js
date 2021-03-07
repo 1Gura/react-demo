@@ -134,7 +134,7 @@ class PostContainer extends Component {
           <Route
             path="/"
             exact
-            render={(props) =>
+            render={() =>
               posts.length === 0 ? (
                 <Load />
               ) : (
@@ -147,7 +147,6 @@ class PostContainer extends Component {
               )
             }
           />
-          {/*<Route path = '/all' exact render={props => <All key = {unsplash.accessKey} newSearchPosts = {searchPosts} newSearchPostFunc = {this.props.newPostsSearch}/>}/>*/}
           <Route
             path="/:id"
             exact
@@ -166,14 +165,17 @@ class PostContainer extends Component {
                   />
                 );
               } else if (id === "react-demo") {
-                return (
-                  <Feed
-                    user={this.state.userProfile}
-                    posts={posts}
-                    clickLikePost={this.like}
-                    newPosts={this.newPosts}
-                  />
-                );
+                return () =>
+                  posts.length === 0 ? (
+                    <Load />
+                  ) : (
+                    <Feed
+                      user={this.state.userProfile}
+                      posts={posts}
+                      clickLikePost={this.like}
+                      newPosts={this.newPosts}
+                    />
+                  );
               } else if (id.length > 0) {
                 return (
                   <Photo
@@ -184,14 +186,17 @@ class PostContainer extends Component {
                   />
                 );
               } else {
-                return (
-                  <Feed
-                    user={this.state.userProfile}
-                    posts={posts}
-                    clickLikePost={this.like}
-                    newPosts={this.newPosts}
-                  />
-                );
+                return () =>
+                  posts.length === 0 ? (
+                    <Load />
+                  ) : (
+                    <Feed
+                      user={this.state.userProfile}
+                      posts={posts}
+                      clickLikePost={this.like}
+                      newPosts={this.newPosts}
+                    />
+                  );
               }
             }}
           />
