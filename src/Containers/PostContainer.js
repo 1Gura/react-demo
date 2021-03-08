@@ -20,8 +20,8 @@ import Load from "../Components/Load";
 const unsplash = new Unsplash({
   accessKey: "AjdqGNN2J3YljxoQKuDTucL8mCkxqv-hLhRMpMO3PSg",
   secret: "XhyISIZuair3TxDrjB8WBGaVf6uLgpkgxaDCuf39rZc",
-  //callbackUrl: "http://localhost:3000/react-demo/",
-  callbackUrl: "https://sugarboy228.github.io/react-demo/",
+  callbackUrl: "http://localhost:3000/",
+  //callbackUrl: "https://sugarboy228.github.io/react-demo/",
 });
 const authenticationUrl = unsplash.auth.getAuthenticationUrl([
   "public",
@@ -132,7 +132,7 @@ class PostContainer extends Component {
             changeInputSearch={this.changeInputSearch}
           />
           <Route
-            path="/react-demo/"
+            path="/"
             exact
             render={() =>
               posts.length === 0 ? (
@@ -148,7 +148,7 @@ class PostContainer extends Component {
             }
           />
           <Route
-            path="/react-demo/:id"
+            path="/:id"
             exact
             render={({ match }) => {
               const { id } = match.params;
@@ -166,7 +166,7 @@ class PostContainer extends Component {
                 );
               } else if (id === "react-demo") {
                 return posts.length > 0 ? (
-                  <Redirect to="/react-demo/" />
+                  <Redirect to="/" />
                 ) : (
                   <Load />
                 );
