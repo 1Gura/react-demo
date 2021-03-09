@@ -164,6 +164,12 @@ class PostContainer extends Component {
                     newSearchPostFunc={this.newPostsSearchContainer}
                   />
                 );
+                /*Вынужден добавлять такую проверку т.к. для проекта залитого на github корнем будет являться
+                * https://sugarboy228.github.io/
+                * а не
+                * https://sugarboy228.github.io/react-demo/
+                * по этой же причине указал корень проекта как "/react-demo/", а не "/"
+                *  */
               } else if (id === "react-demo") {
                 return posts.length > 0 ? (
                   <Redirect to="/react-demo/" />
